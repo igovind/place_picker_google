@@ -63,13 +63,14 @@ class GoogleMapsPlaces extends GoogleMapsHTTPService {
       // if (sessionToken != null) 'sessiontoken': sessionToken,
     };
 
-    final autocompleteUrl = url
-        .replace(
-                   path: 'https://dfoho-74025.cloudfunctions.net/googleAutocomplete',//Change
-// path: '${url.path}autocomplete/json',
-          queryParameters: params,
-        )
-        .toString();
+    final autocompleteUrl = 'https://dfoho-74025.cloudfunctions.net/googleAutocomplete?input=$query'
+//     ''
+//         .replace(
+//                    path: 'https://dfoho-74025.cloudfunctions.net/googleAutocomplete',//Change
+// // path: '${url.path}autocomplete/json',
+//           queryParameters: params,
+//         )
+//         .toString();
 
     return await doGet(autocompleteUrl, headers: apiHeaders);
   }
