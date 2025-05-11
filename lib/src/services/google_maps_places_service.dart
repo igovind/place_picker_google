@@ -63,7 +63,7 @@ class GoogleMapsPlaces extends GoogleMapsHTTPService {
       // if (sessionToken != null) 'sessiontoken': sessionToken,
     };
 
-    final autocompleteUrl = 'https://dfoho-74025.cloudfunctions.net/googleAutocomplete?input=$query'
+    final autocompleteUrl = 'https://dfoho-74025.cloudfunctions.net/googleAutocomplete?input=$query';
 //     ''
 //         .replace(
 //                    path: 'https://dfoho-74025.cloudfunctions.net/googleAutocomplete',//Change
