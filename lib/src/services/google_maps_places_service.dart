@@ -65,7 +65,8 @@ class GoogleMapsPlaces extends GoogleMapsHTTPService {
 
     final autocompleteUrl = url
         .replace(
-          path: '${url.path}autocomplete/json',
+                   path: 'https://dfoho-74025.cloudfunctions.net/googleAutocomplete',//Change
+// path: '${url.path}autocomplete/json',
           queryParameters: params,
         )
         .toString();
