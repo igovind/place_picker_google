@@ -51,16 +51,16 @@ class GoogleMapsPlaces extends GoogleMapsHTTPService {
     final params = {
       'input': query,
       if (apiKey != null) 'key': apiKey,
-      if (location != null)
-        'location': "${location.latitude}, ${location.longitude}",
-      if (language != null) 'language': language,
-      if (origin != null) 'origin': origin.toString(),
-      if (radius != null) 'radius': radius.toString(),
-      if (types.isNotEmpty) 'types': types.join('|'),
-      if (strictBounds) 'strictbounds': strictBounds.toString(),
-      if (offset != null) 'offset': offset.toString(),
-      if (region != null) 'region': region,
-      if (sessionToken != null) 'sessiontoken': sessionToken,
+      // if (location != null)
+      //   'location': "${location.latitude}, ${location.longitude}",
+      // if (language != null) 'language': language,
+      // if (origin != null) 'origin': origin.toString(),
+      // if (radius != null) 'radius': radius.toString(),
+      // if (types.isNotEmpty) 'types': types.join('|'),
+      // if (strictBounds) 'strictbounds': strictBounds.toString(),
+      // if (offset != null) 'offset': offset.toString(),
+      // if (region != null) 'region': region,
+      // if (sessionToken != null) 'sessiontoken': sessionToken,
     };
 
     final autocompleteUrl = url
